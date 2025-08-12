@@ -18,7 +18,7 @@ const mySchema = new mongoose.Schema({
     salary : Number
 })
 
-const myModel = mongoose.model('employees',mySchema)
+const myModel = mongoose.model('employees',mySchema);
 
 //Post Request
 app.post('/addEmployee' , async(req,res)=>{
