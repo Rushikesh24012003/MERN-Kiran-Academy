@@ -29,7 +29,7 @@ function Form() {
           },
           {
             withCredentials : "true",
-            headers : {"Content-Type" : "application/json" },
+            headers : {"Content-Type" : "application/json"},
           }
         ); 
 

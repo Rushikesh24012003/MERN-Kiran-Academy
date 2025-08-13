@@ -43,4 +43,14 @@ app.post('/addDetails' , async(req,res) => {
     }
 })
 
+app.get('/getDetails', async(req,res) =>{
+    try {
+        const data = await myModel.find();
+        res.status(200).json(data);
+    } catch (error) {
+        res.status(400).json("cannot get data")
+    }
+
+})
+
 app.listen(PORT , () => console.log(`server is running on port :  ${PORT}`))
